@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delizia Pizza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #e63946;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #f1faee;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #1d3557;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1601924638867-3ec2e4e9ef08') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      text-align: center;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .pizza {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .pizza:hover {
+      transform: translateY(-5px);
+    }
+
+    .pizza img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .pizza h3 {
+      padding: 15px;
+      font-size: 1.5em;
+      color: #e63946;
+    }
+
+    .pizza p {
+      padding: 0 15px 15px;
+    }
+
+    footer {
+      background-color: #1d3557;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Delizia Pizza</h1>
+    <p>Deliciousness Delivered</p>
+  </header>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <h2>Fresh, Hot & Tasty Pizzas</h2>
+  </section>
+  <section class="section" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu">
+      <div class="pizza">
+        <img src="https://images.unsplash.com/photo-1601924579440-1e39c86d164e" alt="Margherita">
+        <h3>Margherita</h3>
+        <p>Classic delight with 100% real mozzarella cheese and fresh tomatoes.</p>
+      </div>
+      <div class="pizza">
+        <img src="https://images.unsplash.com/photo-1601924641442-440043bf1b51" alt="Pepperoni">
+        <h3>Pepperoni</h3>
+        <p>A crowd favorite loaded with spicy pepperoni and extra cheese.</p>
+      </div>
+      <div class="pizza">
+        <img src="https://images.unsplash.com/photo-1605478903615-1d1dfcf1984b" alt="Veggie Delight">
+        <h3>Veggie Delight</h3>
+        <p>Loaded with mushrooms, onions, capsicum and olives.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>Delizia Pizza was founded with one mission: to bring authentic, fresh, and mouth-watering pizza to our community. We use only the finest ingredients and traditional methods to craft every pizza to perfection.</p>
+  </section>
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: hello@deliziapizza.com</p>
+    <p>Phone: +123 456 7890</p>
+    <p>Address: 123 Pizza Street, Flavor Town</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Delizia Pizza. All rights reserved.</p>
+  </footer>
+</body>
+</html>
